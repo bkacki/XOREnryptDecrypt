@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            var message = "ptaki lataja kluczem";
-            var key = "haslo";
+            var message = "Lorem Ipsum.";
+            var key = "test";
             var test = XorEncryptDecrypt.XorEnryptDecrypt(message, key);
 
             Console.WriteLine(test);

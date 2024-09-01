@@ -36,7 +36,7 @@ namespace XOREnryptDecrypt
             {
                 sb.Append(Convert.ToString(c, 2).PadLeft(8, '0'));
             }
-            return InsertSpacesEvery8Chars(sb.ToString());
+            return sb.ToString();
         }
 
         public static string InsertSpacesEvery8Chars(string input)
