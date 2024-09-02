@@ -4,11 +4,15 @@
     {
         static void Main(string[] args)
         {
-            var message = "Lorem Ipsum.";
-            var key = "test";
-            var test = XorEncryptDecrypt.XorEnryptDecrypt(message, key);
+            var message = "10101";
+            var key = "11111";
+            var encryptedMessage = XorEncryptDecrypt.XorEnryptDecrypt(message, key, InputType.binary, InputType.binary, InputType.binary);
+            var test = XorEncryptDecrypt.XorEnryptDecrypt(encryptedMessage, key, InputType.binary, InputType.binary, InputType.binary);
 
-            Console.WriteLine(test);
+            Console.WriteLine($@"Message: {message}
+Key: {key}
+Encrypted Message: {encryptedMessage}
+Reverse: {test}");
         }
     }
 }
